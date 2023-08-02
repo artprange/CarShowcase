@@ -19,7 +19,6 @@ const Hero = () => {
         {/* <p className="hero__subtitle">
           Aluguel de carros como você nunca viu
         </p> */}
-
         <CustomButton
           title="Explore Cars"
           containerStyles="bg-primary-blue
