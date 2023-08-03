@@ -14,7 +14,6 @@ const Hero = () => {
         {/* <h1 className="hero__title">Encontre, reserve ou alugue um carro — fácil e rápido</h1> */}
         <p className="hero__subtitle">
           Streamline your car rental experience with our effortless booking.
-          process
         </p>
         {/* <p className="hero__subtitle">
           Aluguel de carros como você nunca viu
