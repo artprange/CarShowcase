@@ -5,6 +5,7 @@ import { CarProps } from "@/types";
 import CustomButton from "./CustomButton";
 import { calculateCarRent } from "@/utils";
 import CarDetails from "./CarDetails";
+import { generateCarImageUrl } from "@/utils";
 
 interface CarCardProps {
   car: CarProps;
@@ -31,7 +32,7 @@ const CarCard = ({ car }: CarCardProps) => {
       </p>
       <div className="relative w-full h-40 my-3 object-contain">
         <Image
-          src="/hero.png"
+          src={generateCarImageUrl()}
           alt="car model"
           fill
           priority
@@ -81,7 +82,11 @@ const CarCard = ({ car }: CarCardProps) => {
           ></CustomButton>
         </div>
       </div>
-      <CarDetails isOpen={isOpen} closeModal= />
+      <CarDetails
+        isOpen={isOpen}
+        closeModal={() => setIsOpen(false)}
+        car={car}
+      />
     </div>
   );
 };
